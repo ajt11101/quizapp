@@ -1,6 +1,6 @@
 package com.ajeet.quizapp.service;
 
-import com.ajeet.quizapp.Question;
+import com.ajeet.quizapp.model.Question;
 import com.ajeet.quizapp.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
