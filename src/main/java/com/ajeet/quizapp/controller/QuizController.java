@@ -2,7 +2,9 @@ package com.ajeet.quizapp.controller;
 
 import com.ajeet.quizapp.model.Question;
 import com.ajeet.quizapp.model.QuestionWrapper;
+import com.ajeet.quizapp.model.QuizResponse;
 import com.ajeet.quizapp.service.QuizService;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,5 +26,10 @@ public class QuizController {
     @GetMapping("get/{id}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestionsById(@PathVariable Integer id) {
         return quizService.getQuizQuestionsById(id);
+    }
+
+    @PostMapping("submit/{id}")
+    public ResponseEntity<Integer> submitQuiz(@PathVariable Integer id, @RequestBody List<QuizResponse> quizResponse) {
+        return quizService.submitQuiz(id, quizResponse);
     }
 }
