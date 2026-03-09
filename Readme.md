@@ -59,7 +59,7 @@ mvn spring-boot:run
 The server will start at:
 
 ```
-http://localhost:8080
+http://localhost:<port>
 ```
 
 ## Future Improvements
