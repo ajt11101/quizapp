@@ -1,6 +1,6 @@
 # Quiz App (Spring Boot)
 
-A simple **Quiz Application backend** built using **Java and Spring Boot**.
+A simple **Quiz Application backend** built using **Java and Spring Boot** based on monolithic architecture.
 The application allows users to add questions, create quizzes, submit answers, and evaluate results.
 
 ## Features
